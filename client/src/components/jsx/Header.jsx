@@ -14,7 +14,7 @@ const Header = () => {
     const headerref = useRef(null)
 
     useEffect(() => {
-        console.log(`header height: ${headerref.current.offsetHeight}`)
+        // console.log(`header height: ${headerref.current.offsetHeight}`)
     })
 
     return (

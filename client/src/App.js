@@ -6,20 +6,20 @@ import './App.css';
 
 //Components
 import Header from "./components/jsx/Header"
-import SideBar from './components/jsx/SideBar';
+import Instructions from './components/jsx/Instructions';
+import MainWindow from './components/jsx/MainWindow/MainWindow';
+
+
+//use grid to fix layout problems
 
 function App() {
   
   const appref = useRef(null)
-
-
-  
-  
-  
   return (
     <div ref={appref} className="App">
       <Header/>
-      <SideBar/>
+      <MainWindow/>
+      <Instructions/>
     </div>
   )
 }

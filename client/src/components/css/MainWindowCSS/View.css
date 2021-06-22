@@ -1,0 +1,9 @@
+#viewing-area{
+    background-color: rgb(255, 255, 255);
+    /* height: calc(625 - 30vh); */
+    width: 50%;
+    /* overflow: scroll; */
+    text-align: center;
+    color: black;
+    
+}
