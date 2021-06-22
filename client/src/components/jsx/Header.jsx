@@ -1,0 +1,35 @@
+//global imports
+import React,{ useRef, useEffect } from 'react'
+
+//import stylesheet
+import "../css/Header.css"
+
+//import icons
+import { VscTriangleDown, VscSettingsGear } from "react-icons/vsc"
+
+//import profile image
+import profile from "../../resources/shredder.png"
+
+const Header = () => {
+    const headerref = useRef(null)
+
+    useEffect(() => {
+        console.log(`header height: ${headerref.current.offsetHeight}`)
+    })
+
+    return (
+        <div ref={headerref} id="header">
+            <h1>CompWiz</h1>
+            <div id="user-info">
+                <span id="user-rank">123</span>
+                <VscSettingsGear/>
+                <span id="header-account">
+                    <VscTriangleDown/>
+                    <img src={profile} alt="" id="profile" />
+                </span>
+            </div>
+        </div>
+    )
+}
+
+export default Header

@@ -1,0 +1,11 @@
+#sidebar {
+    /* margin-top: 5vw; */
+    width: 15vw;
+    background-color: lightblue;
+    opacity: 0.5;
+    height: calc(625px - 10vh);
+    
+    position: absolute;
+    left: 0px;
+    /* overflow: scroll; */
+}

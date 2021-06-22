@@ -1,0 +1,36 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 119, 6);
+    width: 100vw;
+    height: 10vh;
+    
+}
+
+#header h1{
+    margin: auto 0;
+}
+
+#user-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+    font-size: 1.5em;
+}
+
+#header-account{
+    width: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile{
+    padding: 3px;
+    background-color: pink;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    user-select: none;
+}
