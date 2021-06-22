@@ -1,0 +1,59 @@
+#theme-default-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.controls-triangle {
+    padding-right: 10px;
+}
+
+#theme-container {
+    position: relative;
+    /* background-color: blue; */
+    width: 5vw;
+    transition: all 500ms ease-in-out;
+    user-select: none;
+}
+
+
+
+#theme-list {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: fit-content;
+    list-style-type: none;
+    transition: opacity 300ms ease-in-out;
+}
+
+#theme-list li {
+    background-color: var(--blue-main);
+    border: 1px solid black;
+    padding: 5px 10px;
+    user-select: none;
+    transition: all 100ms ease-in;
+}
+
+#theme-container:hover #theme-list {
+    opacity: 1;
+    pointer-events: all;
+    
+}
+
+#theme-list li:hover {
+    background-color: var(--blue-dark);
+    background-color: black;
+    color: var(--blue-dark);
+    cursor: pointer;
+}
+
+#theme-list li:active {
+    background-color: var(--blue-main);
+    transition: all 10ms ease-in;
+}

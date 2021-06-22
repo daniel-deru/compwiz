@@ -10,16 +10,15 @@ import { VscTriangleDown, VscSettingsGear } from "react-icons/vsc"
 //import profile image
 import profile from "../../resources/shredder.png"
 
-const Header = () => {
-    const headerref = useRef(null)
+// Component Imports
+import Controls from './Controls'
 
-    useEffect(() => {
-        // console.log(`header height: ${headerref.current.offsetHeight}`)
-    })
+const Header = () => {
 
     return (
-        <div ref={headerref} id="header">
+        <div  id="header">
             <h1>CompWiz</h1>
+            <Controls/>
             <div id="user-info">
                 <span id="user-rank">123</span>
                 <VscSettingsGear/>

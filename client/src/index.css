@@ -1,3 +1,8 @@
+:root{
+  --blue-main: hsl(192, 100%, 50%);
+  --blue-dark: hsl(200, 100%, 40%);
+}
+
 * {
   margin: 0;
 }
