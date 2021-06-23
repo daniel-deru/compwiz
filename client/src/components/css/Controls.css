@@ -1,6 +1,8 @@
 #header-controls {
     display: flex;
-    width: 30vw;
+    width: 40vw;
     justify-content: space-between;
     align-items: center;
+    margin-left: 5vw;
 }
+

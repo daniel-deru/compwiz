@@ -1,25 +1,32 @@
+// react imports
+import { useEffect, useState } from "react"
+
 // stylesheet imports
 import "../css/Topic.css"
 
 //import icons
 import { VscTriangleDown } from "react-icons/vsc"
 
+
+// this is static and only for display purposes
+const topics = ["math", "physics", "biology", "accounting", "cooking", "IT"]
+
 const Topic = () => {
+    const [displayTopic, setDisplayTopic] = useState("Topics")
+
     return (
         <div id="topic-container">
-            <div id="topic-default-container">
-                <VscTriangleDown className="controls-triangle"/>
-                <div id="topic">Topic</div>
-            </div>
+           
 
-            <ul id="topic-list">
-                <li>math</li>
-                <li>physics</li>
-                <li>biology</li>
-                <li>accounting</li>
-                <li>cooking</li>
-                <li>IT</li>
-            </ul>
+            <select name="topic-select" id="topic-select" className="header-select">
+                <option value="topic-option">Topic</option>
+                {topics.map(element => {
+                    return  <option value={element} onClick={() => {setDisplayTopic(element)}}>
+                                {element}
+                            </option>
+                })}
+                 <option value="random">random</option>
+            </select>
         </div>
     )
 }
