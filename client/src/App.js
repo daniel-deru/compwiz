@@ -1,25 +1,33 @@
 // global imports
 import { useRef, useEffect } from 'react';
 
+// front end routing
+import { BrowserRouter, Switch, Route } from "react-router-dom"
+
 
 import './App.css';
 
 //Components
-import Header from "./components/jsx/Header"
-import Instructions from './components/jsx/Instructions';
-import MainWindow from './components/jsx/MainWindow/MainWindow';
+import UserWindow from './components/jsx/UserWindow'
+import SignUp from './components/jsx/SignUp';
+import SignIn from './components/jsx/SignIn';
+
 
 
 //use grid to fix layout problems
 
 function App() {
   
-  const appref = useRef(null)
   return (
-    <div ref={appref} className="App">
-      <Header/>
-      <MainWindow/>
-      <Instructions/>
+    <div  className="App">
+      <BrowserRouter>
+        <Switch>
+        <Route exact path="/" component={UserWindow} />
+        <Route exact path="/signup" component={SignUp}/>
+        <Route exact path="/signin" component={SignIn} />
+        </Switch>
+      </BrowserRouter>
+      
     </div>
   )
 }

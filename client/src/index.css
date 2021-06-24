@@ -3,6 +3,7 @@
 :root{
   --blue-main: hsl(192, 100%, 50%);
   --blue-dark: hsl(200, 100%, 40%);
+  --grey-main: hsl(0, 0%, 17%);
 }
 
 * {
@@ -11,13 +12,14 @@
 
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Caveat', cursive;
   font-size: 1.5em;
+  color: white;
+  height: 100vh;
+  max-height: 100vh;
+  box-sizing: border-box;
 }
 
 

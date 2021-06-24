@@ -1,15 +1,18 @@
 .header-select {
-    background-color: var(--blue-main);
+    /* background-color: var(--blue-main); */
+    background-color: var(--blue-dark);
     outline: none;
     border-radius: 20px;
     padding: 2px 10px;
     font-family: 'Caveat', cursive;
     font-size: 1.1em;
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
+    
 }
 
 .header-select option {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     font-family: 'Caveat', cursive;
     font-size: 1.1em;
 }

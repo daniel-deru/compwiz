@@ -1,0 +1,20 @@
+#signup {
+    background-color: var(--grey-main);
+    min-height: 100vh;
+    text-align: center;
+}
+
+#signup h1 {
+    background-color: var(--blue-main);
+    padding: 10px;
+}
+
+#signup form {
+    width: 30%;
+    margin: auto;
+}
+
+#signup-fields-container > div {
+    display: flex;
+    flex-direction: column;
+}

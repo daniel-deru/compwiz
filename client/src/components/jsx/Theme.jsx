@@ -12,24 +12,21 @@ const themes = ["cars", 'fashion', 'space', 'music', 'sport', 'nature', 'christm
 
 const Theme = () => {
     const [displayTheme, setDisplayTheme] = useState("Theme")
+    const [firstSelect, setFirstSelect] = useState(true)
+
+    const getTheme = (e) => {
+
+        if(!firstSelect) {
+            console.log(e.target.value)
+        }
+
+        setFirstSelect(!firstSelect)
+    }
 
     return (
         <div id="theme-container">
-            {/* <div id="theme-default-container">
-                <VscTriangleDown className="controls-triangle"/>
-                <div id="theme">{displayTheme}</div>
-            </div>
 
-            <ul id="theme-list">
-                {themes.map(element => {
-                    return <li onClick={() => setDisplayTheme(element)}>
-                        {element}
-                    </li>
-                })}
-                <li onClick={() => setDisplayTheme("Random")}>Random</li>
-            </ul> */}
-
-            <select name="theme-select" id="theme-select" className="header-select">
+            <select name="theme-select" id="theme-select" className="header-select" onClick={(e) => getTheme(e)}> 
                 <option value="theme-option">Theme</option>
                 {themes.map(element => {
                     return  <option value={element} onClick={() => {setDisplayTheme(element)}}>

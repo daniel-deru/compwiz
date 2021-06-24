@@ -1,0 +1,86 @@
+#signin {
+    background-color: rgb(44, 44, 44);
+    min-height: 100vh;
+}
+
+#signin h1 {
+       background-color: var(--blue-main);
+       padding: 20px 0;
+       text-align: center;
+}
+
+
+#signin form {
+    text-align: center;
+    padding-top: 10vh;
+    width: 30%;
+    margin: auto;
+}
+
+#signin form label {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+
+#signin form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#signin input {
+    width: 90%;
+    margin: 10px auto 20px auto;
+    font-size: 1.1em;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid var(--blue-main);
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding: 5px 10px;
+}
+
+#signin-button-container {
+    width: 45%;
+    margin: auto;
+}
+
+#signin-button {
+    width: 100%;
+    font-size: 1.4em;
+    font-family: 'Caveat', cursive;
+    background-color: var(--blue-main);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(44, 44, 44);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px 20px; 
+}
+
+#signup-forgot-container {
+    text-align: center;
+}
+
+#signup-forgot-container div{
+    margin-top: 20px;
+}
+
+#signup-link a{
+    color: var(--blue-main);
+}
+
+#forgot-password a {
+    color: var(--blue-main);
+}
+
+@media (max-height: 600px) {
+    #signin form {
+        text-align: center;
+        padding-top: 10vh;
+        width: 80%;
+        margin: auto;
+    }
+    
+}

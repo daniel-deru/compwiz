@@ -14,9 +14,15 @@ const levels = [1, 2, 3, 4, 5, 6, 7]
 
 const Levels = () => {
     const [displayLevel, setDisplayLevel] = useState("Levels")
+    const [firstSelect, setFirstSelect] = useState(true)
 
     const getLevel = (e) => {
-        console.log(e.target.value)
+        if(!firstSelect){
+            console.log(e.target.value)
+            
+        }
+        setFirstSelect(!firstSelect)
+        
     }
 
     return (

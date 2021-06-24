@@ -1,5 +1,5 @@
 #main-window {
     color: blue;
-    /* height: calc(625px - 30vh); */
     display: flex;
+    height: 60vh;
 }

@@ -13,12 +13,22 @@ const topics = ["math", "physics", "biology", "accounting", "cooking", "IT"]
 
 const Topic = () => {
     const [displayTopic, setDisplayTopic] = useState("Topics")
+    const [firstSelect, setFirstselect] = useState(true)
+
+    const getTopic = (e) => {
+
+        if(!firstSelect) {
+            console.log(e.target.value)
+        }
+
+        setFirstselect(!firstSelect)
+    }
 
     return (
         <div id="topic-container">
            
 
-            <select name="topic-select" id="topic-select" className="header-select">
+            <select name="topic-select" id="topic-select" className="header-select" onClick={(e) => getTopic(e)}>
                 <option value="topic-option">Topic</option>
                 {topics.map(element => {
                     return  <option value={element} onClick={() => {setDisplayTopic(element)}}>

@@ -1,7 +1,11 @@
 #coding-area{
     background-color: rgb(53, 53, 53);
-    /* height: calc(625 - 30vh); */
     width: 50%;
     color: white;
-    text-align: center;
+    text-align: left;
+    outline: none;
+    padding: 10px;
+    word-break: break-all;
+    overflow: auto;
+    
 }
