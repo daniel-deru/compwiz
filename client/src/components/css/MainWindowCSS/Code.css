@@ -3,9 +3,26 @@
     width: 50%;
     color: white;
     text-align: left;
-    outline: none;
-    padding: 10px;
+    
+    display: flex;
     word-break: break-all;
     overflow: auto;
-    
+}
+
+#line-no {
+    height: 100%;
+    width: 10%;
+    border-right: 1px solid grey;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+}
+
+#main-code {
+    display: block;
+    width: 90%;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
